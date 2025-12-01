@@ -1,4 +1,25 @@
+// Arithmetic Operators
+
 fn main() {
-    let x = 5.12343546766789;
-    println!("X is {}", x);
+    // Addition
+    let x = 4;
+    let v = 3;
+    let c = x + v;
+    println!("C = {}", c);
+    // Subtraction
+    let x = 4;
+    let v = 3;
+
+    let c = x - v;
+    println!("C = {}", c);
+    // Multiplication
+    let x = 4;
+    let v = 3;
+    let c = x * v;
+    println!("C = {}", c);
+    // Division
+    let x = 4;
+    let v = 3;
+    let c = x / v;
+    println!("C = {}", c);
 }
