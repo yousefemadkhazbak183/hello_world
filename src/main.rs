@@ -1,6 +1,4 @@
 fn main() {
-    let mut x = 5;
-    println!("X is {}", x);
-    x = 10;
+    let x = 5.12343546766789;
     println!("X is {}", x);
 }
