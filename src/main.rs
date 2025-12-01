@@ -1,25 +1,26 @@
-// Arithmetic Operators
-
+// Bitwise operations
 fn main() {
-    // Addition
-    let x = 4;
-    let v = 3;
-    let c = x + v;
-    println!("C = {}", c);
-    // Subtraction
-    let x = 4;
-    let v = 3;
+    let mut value = 0b1111_0101u8;
+    println!("Value is {}", value);
+    println!("Value is {:08b}", value);
 
-    let c = x - v;
-    println!("C = {}", c);
-    // Multiplication
-    let x = 4;
-    let v = 3;
-    let c = x * v;
-    println!("C = {}", c);
-    // Division
-    let x = 4;
-    let v = 3;
-    let c = x / v;
-    println!("C = {}", c);
+    // NOT
+    value = !value;
+    println!("Value is {:08b}", value);
+
+    // AND
+    value = value & 0b1111_0111;
+    println!("Value is {:08b}", value);
+
+    value = value | 0b0100_0000;
+    println!("Value is {:08b}", value);
+
+    value = value ^ 0b0101_0101;
+    println!("Value is {:08b}", value);
+
+    value = value >> 2;
+    println!("Value is {:08b}", value);
+
+    value = value << 4;
+    println!("Value is {:08b}", value);
 }
