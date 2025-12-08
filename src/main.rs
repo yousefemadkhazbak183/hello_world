@@ -1,26 +1,11 @@
-// Bitwise operations
+// Boolean Data Types
+
 fn main() {
-    let mut value = 0b1111_0101u8;
-    println!("Value is {}", value);
-    println!("Value is {:08b}", value);
-
-    // NOT
-    value = !value;
-    println!("Value is {:08b}", value);
-
-    // AND
-    value = value & 0b1111_0111;
-    println!("Value is {:08b}", value);
-
-    value = value | 0b0100_0000;
-    println!("Value is {:08b}", value);
-
-    value = value ^ 0b0101_0101;
-    println!("Value is {:08b}", value);
-
-    value = value >> 2;
-    println!("Value is {:08b}", value);
-
-    value = value << 4;
-    println!("Value is {:08b}", value);
+    let a = true;
+    let b = false;
+    println!("a is {} and b is {}", a, b);
+    println!("NOT a is {}", !a);
+    println!("a AND b is {}", a & b);
+    println!("a OR b is {}", a | b);
+    println!("a XOR b is {}", a ^ b);
 }
